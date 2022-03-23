@@ -3,6 +3,7 @@
     <apiVersion>54.0</apiVersion>
     <isExposed>true</isExposed>
     <targets>
+    <!-- asdasd -->
         <target>lightning__HomePage</target>
         <target>lightning__RecordPage</target>
     </targets>

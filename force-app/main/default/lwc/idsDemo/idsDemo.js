@@ -4,6 +4,7 @@ import AnnualRevenue from '@salesforce/schema/Account.AnnualRevenue';
 
 export default class IdsDemo extends LightningElement {
     @api recordId;
+    // api  start
     @api objectApiName;
 
     @track fields = [accountName,AnnualRevenue];
