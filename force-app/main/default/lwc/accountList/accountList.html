@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="Calling apex moethod imperatively ">
+        <lightning-button label="Load account" onclick={handleLoad}></lightning-button>
+        <!-- Using Wire Property to call apex method -->
+
+        <template if:true={accounts}>
+            <!-- .data -->
+            <template for:each={accounts} for:item="acc" >
+                <!-- .data -->
+                <p key={acc.Id}>{acc.Name}</p>
+            </template>
+        </template>
+        <template if:true={error}>{error}</template>
+        <!-- accounts. -->
+
+    </lightning-card>
+</template>

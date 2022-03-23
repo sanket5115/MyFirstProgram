@@ -1,0 +1,46 @@
+<template>
+
+    <lightning-card title="Record Form:Read">
+        <lightning-record-form record-id="0015j00000aPMqpAAG"
+        object-api-name="Account"
+        fields={fields}
+        mode="readOnly">
+        </lightning-record-form>
+    </lightning-card>
+
+    <lightning-card title="Record Form:View">
+        <lightning-record-form record-id="0015j00000aPMqpAAG"
+        object-api-name="Account"
+        fields={fields}
+        mode="view"></lightning-record-form>
+    </lightning-card>
+
+    <lightning-card title="Record Form:Edit">
+        <lightning-record-form record-id="0015j00000aPMqpAAG"
+        object-api-name="Account"
+        fields={fields}
+        mode="edit"></lightning-record-form>
+    </lightning-card>
+
+
+    <lightning-card title="Record View Form">
+        <lightning-record-edit-form record-id="0015j00000aPMqpAAG" object-api-name="Account">
+            <lightning-output-field field-name="Name"></lightning-output-field>
+            <lightning-output-field field-name="AnnualRevenue"></lightning-output-field>
+            <lightning-output-field field-name="Phone"></lightning-output-field>
+        </lightning-record-edit-form>
+    </lightning-card>
+
+    <lightning-card title="Record Edit Form">
+        <lightning-record-edit-form record-id="0015j00000aPMqpAAG" object-api-name="Account">
+            <lightning-input-field field-name="Name"></lightning-input-field>
+            <lightning-input-field field-name="AnnualRevenue"></lightning-input-field>
+            <lightning-input-field field-name="Phone"></lightning-input-field>
+            <lightning-button label="Save" type="submit" onclick={showSuccessToast}></lightning-button>
+        </lightning-record-edit-form>
+    </lightning-card>
+
+
+
+    
+</template>
